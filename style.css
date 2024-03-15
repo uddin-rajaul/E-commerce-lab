@@ -1,0 +1,9 @@
+.main-container {
+  border: 5px solid red;
+  border-radius: 5px;
+  min-height: fit-content;
+}
+.sub-container {
+  border: 2px brown;
+  border-color: aqua;
+}
