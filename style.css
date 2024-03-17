@@ -1,9 +1,46 @@
-.main-container {
-  border: 5px solid red;
-  border-radius: 5px;
-  min-height: fit-content;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.sub-container {
-  border: 2px brown;
-  border-color: aqua;
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  border: 2px solid rgb(243, 90, 13);
+  width: 100vw;
+  height: 90vh;
+  padding: 10px;
+  margin: 20px;
+  display: grid;
+  grid-template: 50px 1fr 1fr 100px / repeat(3, 1fr);
+  gap: 10px;
+  position: relative;
+  /* box-sizing: border-box; */
+}
+.main-container div {
+  padding: 10px;
+  border: 2px solid rgb(0, 201, 251);
+  font-size: x-large;
+}
+.box-1 {
+  /* header */
+  grid-column-start: 1;
+  grid-column-end: span 4;
+}
+.box-2 {
+  /* side-bar */
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+.box-3 {
+  /* main-content */
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 2;
+}
+.box-4 {
+  /* footer */
+  grid-column: 1 / span 4;
 }
