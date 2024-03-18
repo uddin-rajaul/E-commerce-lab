@@ -9,28 +9,31 @@ body {
 }
 
 .main-container {
-  border: 2px solid rgb(243, 90, 13);
+  /* border: 2px solid rgb(243, 90, 13); */
   width: 100vw;
   height: 90vh;
   padding: 10px;
   margin: 20px;
   display: grid;
-  grid-template: 50px 1fr 1fr 100px / repeat(3, 1fr);
+  grid-template: 0.2fr 1fr 1fr 100px / repeat(3, 1fr);
   gap: 10px;
   position: relative;
+
   /* box-sizing: border-box; */
 }
 .main-container div {
   padding: 10px;
-  border: 2px solid rgb(0, 201, 251);
+  /* border: 2px solid rgb(0, 201, 251); */
   font-size: x-large;
 }
 .box-1 {
   /* header */
+  background-color: #e5e4e4;
   grid-column-start: span 4;
 }
 .box-2 {
   /* side-bar */
+  background-color: #e5e4e4;
   grid-column-start: 0;
   grid-column-end: 1;
   grid-row-start: 2;
@@ -75,8 +78,7 @@ body {
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: #e5e4e4;
 }
 
 .navigation li:hover .dropdown {
@@ -86,17 +88,24 @@ body {
 
 .dropdown button {
   padding: 5px 10px;
-  border: none;
-  background-color: transparent;
+  border: 1px solid;
   cursor: pointer;
+  margin-bottom: 5px;
+
 }
 
 .dropdown button a {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 
-.dropdown button a:hover {
-  background-color: #7b7b7b;
+.dropdown button:hover{
   color: #e6e6e6;
 }
+
+
+
+.dropdown button a:hover {
+  color: white;
+}
+
