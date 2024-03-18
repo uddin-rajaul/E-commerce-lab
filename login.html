@@ -4,10 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style_login.css">
     <title>Login</title>
 </head>
-
 <body>
-    
+    <div class = "login-box">
+        <div class = "login-header">
+            <header>Login</header>
+        </div>
+        <div class="input-box">
+            <input type ="text" class = "input_field" placeholder="Email" autocomplete = "off" required>
+            </input>
+        </div>
+        <div class="input-box">
+            <input type ="password" class = "input_field" placeholder="Password" autocomplete = "off" required>
+            </input>
+        </div>
+        <div class="forgot">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check">Remember Me</label>
+            </section>
+            <section>
+                <a href = "#">Forgot Password</a>
+            </section>
+        </div>
+        <div class="input-submit">
+            <button class="submit-btn" id = "submit"></button>
+            <label for="submit">Sign In</label>
+        </div>
+        <div class="sign-up-link">
+            <p>Don't have Account? <a href = "#">Sign Up</a>  </p>
+        </div>
+        <div>
+            <img src="shoe.png" class="image">
+            <img src="logo.png" class="logo_image">
+
+        </div>
+    </div>
 </body>
 </html>
