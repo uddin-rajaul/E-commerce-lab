@@ -118,7 +118,7 @@ section a{
     top: 3rem;
     right: -1cm;
     z-index: -999;
-    opacity: 0.55;
+    opacity: 0.35;
     transform: rotateY(180deg)  rotateZ(-35deg);
 }
 
@@ -127,6 +127,50 @@ section a{
     bottom: 0;
     left: 0;
     z-index: -999;
-    opacity: 0.55;
+    opacity: 0.35;
+}   
+
+.input-box-name {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+}
+  
+.input-box .input_field,
+.input-box-name .input_field_fname,
+.input-box-name .input_field_lname {
+    color: #000; 
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #ccc; 
+    box-shadow: 0 5px 10px 1px rgba(127, 127, 127, 0.5);
+    transition: 0.3s;
+    width: 100%; 
 }
 
+.input-box .input_field:focus,
+.input-box .input_field_fname:focus,
+.input-box .input_field_lname:focus {
+    color: #000;
+}
+
+.input-box .input_field::placeholder,
+.input-box-name .input_field_fname::placeholder,
+.input-box-name .input_field_lname::placeholder {
+    color: #000; 
+    opacity: 0.45;
+    transition: opacity 0.3s ease; 
+}
+
+.input-box-name .input_field_fname{
+    margin-right: 10px; 
+}
+  
+.input-box-name .input_field_lname {
+    flex-grow: 1;
+}
