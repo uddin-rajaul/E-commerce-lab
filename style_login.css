@@ -174,3 +174,12 @@ section a{
 .input-box-name .input_field_lname {
     flex-grow: 1;
 }
+
+
+.fa-eye{
+    position: absolute;
+    top: 48.55%;
+    right: 26.55%;
+    cursor: pointer;
+    color :rgba(127, 127, 127, 0.5);
+}
