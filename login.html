@@ -10,7 +10,6 @@
     <title>Login</title>
 </head>
 <body>
-    <script src = "script.js"></script>
     <div class = "login-box">
         <div class = "login-header">
             <header>Login</header>
@@ -20,8 +19,9 @@
             </input>
         </div>
         <div class="input-box">
-            <input type="password" class="input_field" placeholder="Password" autocomplete="off" required>
-            <i class="fa-solid fa-eye" id="show-password"></i>
+            <input type="password" class="input_field" id = "password" placeholder="Password" autocomplete="off" required>
+            <i class="fa-solid fa-eye" id="show-password-btn"></i>
+            <!-- <i class="fa-solid fa-eye-slash" id = "close-eye"></i> -->
         </div>        
         <div class="forgot">
             <section>
@@ -45,5 +45,6 @@
 
         </div>
     </div>
+    <script src = "script.js"></script>
 </body>
 </html>
