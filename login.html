@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style_login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA4MsMf9bMhEEz9d9/2wju5u0Oq1HIlNtqhOPZiyAGFsE" crossorigin="anonymous">
     <title>Login</title>
 </head>
 <body>
-    <div class = "login-box">
-        <div class = "login-header">
+    <form class="login-box" onsubmit="return validateForm()">
+        <div class="login-header">
             <header>Login</header>
         </div>
         <div class="input-box">
-            <input type ="text" class = "input_field" placeholder="Email" autocomplete = "off" required>
-            </input>
+            <input type="email" class="input_field" placeholder="Email" autocomplete="off" required id="email">
         </div>
         <div class="input-box">
-            <input type="password" class="input_field" id = "password" placeholder="Password" autocomplete="off" required>
+            <input type="password" class="input_field" id="password" placeholder="Password" autocomplete="off" required>
             <i class="fa-solid fa-eye" id="show-password-btn"></i>
-            <!-- <i class="fa-solid fa-eye-slash" id = "close-eye"></i> -->
         </div>        
         <div class="forgot">
             <section>
@@ -29,22 +25,21 @@
                 <label for="check">Remember Me</label>
             </section>
             <section>
-                <a href = "#">Forgot Password</a>
+                <a href="#">Forgot Password</a>
             </section>
         </div>
         <div class="input-submit">
-            <button class="submit-btn" id = "submit"></button>
-            <label for="submit">Sign In</label>
+            <button type="submit" class="submit-btn" id="submit">Sign In</button>
         </div>
         <div class="sign-up-link">
-            <p>Don't have Account? <a href = "#">Sign Up</a>  </p>
+            <p>Don't have an Account? <a href="./signup.html">Sign Up</a></p>
         </div>
         <div>
             <img src="shoe.png" class="image">
             <img src="logo.png" class="logo_image">
-
         </div>
-    </div>
-    <script src = "script.js"></script>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
+    
