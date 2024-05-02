@@ -85,7 +85,7 @@ section a {
 .submit-btn {
   width: 100%;
   height: 60px;
-  background: #222;
+  background: #898585;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -181,4 +181,45 @@ section a {
   right: 40.89%;
   cursor: pointer;
   color: rgba(127, 127, 127, 0.5);
+}
+
+/* cards */
+
+.card {
+  display: inline-block;
+  width: calc(25% - 20px); /* Adjust as needed for 4 cards in each row */
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-details {
+  padding: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
 }

@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Ecommerce</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="main-container">
-      <div class="item box-1">
+    <div class=" w-full h-full">
+      <!-- nav bar -->
+      <div class="box-1 ">
         <div class="main-box">
           <a href="#"><img src="./logo.png" alt="logo" width="350px" /></a>
           <form action="">
@@ -23,50 +29,251 @@
           </form>
           <div class="right-head">
             <ul>
-              <a href="/login.html"
-                ><img src="user.png" alt="user" width="25px" height="25px" />
-                Login |
+              <a href="./login.html">
+                <img src="user.png" alt="user" width="25px" height="25px" />
+                Login
               </a>
             </ul>
-            <a href="#"
-              ><img src="shopping-cart.png" width="30px" height="30px"
+            <ul>
+              |
+            </ul>
+            <ul>
+              <a href="./signup.html">
+                Sign up
+              </a>
+            </ul>
+            <a href="#">
+              <img src="shopping-cart.png" width="30px" height="30px"
             /></a>
           </div>
         </div>
       </div>
-      <div class="item box-2">
-        <ul class="navigation">
-          <li>
-            <a href="#"><button>Electronics</button></a>
-            <div class="dropdown">
-              <a href="#"><button>Home Appliances</button></a>
-              <a href="#"><button>Life Style</button></a>
+
+      <div class="">
+        <div class="flex">
+          <div class="box-2">
+            <ul class="navigation">
+              <li>
+                <a href="#"><button>Electronics</button></a>
+                <div class="dropdown">
+                  <a href="#"><button>Home&nbsp;Appliances</button></a>
+                  <a href="#"><button>Life Style</button></a>
+                </div>
+              </li>
+              <li>
+                <a href="#"><button>Health&nbsp;and&nbsp;Beauty</button></a>
+              </li>
+              <li>
+                <a href="#"><button>Men’s Fashion</button></a>
+                <div class="dropdown">
+                  <a href="#"> <button>Formal</button></a>
+                  <a href="#"> <button>Semi&nbsp;Formal</button></a>
+                  <a href="#"> <button>Casual</button></a>
+                </div>
+              </li>
+              <li>
+                <a href="#"><button>Women’s Fashion</button></a>
+              </li>
+              <li>
+                <a href="#"><button>Sports</button></a>
+              </li>
+              <li>
+                <a href="#"><button>Groceries</button></a>
+              </li>
+            </ul>
+          </div>
+          
+    
+          <div class="box-3">
+            <div class="flex justify-center items-center">
+              <div class="w-full h-[400px] relative overflow-hidden rounded-2xl">
+                  <div id="slides">
+                      <img id="image" class="object-top h-full w-full"
+                          src="https://marketplace.canva.com/EAEvi_nhSkQ/1/0/1600w/canva-turquoise-blue-shoes-realistic-product-promotion-banner-yDiR6ULRWC0.jpg"
+                          alt="img fill" />
+                  </div>
+                  <div id="prev-btn"
+                      class="rounded-2xl hover:cursor-pointer hover:bg-white/30 hover:text-red absolute h-full px-2 flex bg-white/25 top-0 left-0 text-black items-center">
+                      <i class="fa-solid fa-less-than"></i></div>
+                  <div id="next-btn"
+                      class="rounded-2xl hover:cursor-pointer hover:bg-white/30 hover:text-black absolute h-full px-2 flex bg-white/25 top-0 right-0 text-black items-center">
+                      <i class="fa-solid fa-greater-than"></i></div>
+              </div> 
             </div>
-          </li>
-          <li>
-            <a href="#"><button>Health and Beauty</button></a>
-          </li>
-          <li>
-            <a href="#"><button>Men’s Fashion</button></a>
-            <div class="dropdown">
-              <a href="#"> <button>Formal</button></a>
-              <a href="#"> <button>Semi-Formal</button></a>
-              <a href="#"> <button>Casual</button></a>
+    
+            <div id="products" class="flex gap-4 w-full mt-10">
+              <!-- <div class="border h-[200px] w-full  overflow-hidden border-blue-600">
+                  <img class="object-cover h-full w-full"
+                      src="https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736875_640.jpg" alt="">
+              </div>
+              <div>
+                  <p>product name</p>
+                  <p>$100</p>
+              </div> -->
             </div>
-          </li>
-          <li>
-            <a href="#"><button>Women’s Fashion</button></a>
-          </li>
-          <li>
-            <a href="#"><button>Sports</button></a>
-          </li>
-          <li>
-            <a href="#"><button>Groceries</button></a>
-          </li>
-        </ul>
+        </div>
+        </div>
+        <div>Footer</div>
       </div>
-      <div class="item box-3">section</div>
-      <div class="item box-4">footer</div>
+
     </div>
+    
+    <script>
+      $(document).ready(function() {
+          $('.search-input').on('focus', function() {
+              $(this).css('width', '120%'); // Only expand on focus
+          });
+      });
+    </script>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+      
+      setInterval(function() { plusSlides(1); }, 5000); 
+    </script>
+
+<script>
+  const data = [
+      {
+          id: 0,
+          name : 'Item 1',
+          price : '20',
+          image: "https://a.storyblok.com/f/165154/1280x720/a4c06ff7b1/01_hero-image_20-trending-ecommerce-products-to-sell-in-2023.jpg/m/"
+      },
+      {
+          id: 1,
+          name : 'Item 2',
+          price : '200',
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfG-Z6l9Ye1dPUDMbiMlHZL_JvPl9PELezKpU9Hq5zQ&s"
+      },
+      {
+          id: 2,
+          name : 'Item 3',
+          price : '30',
+          image: "https://a.storyblok.com/f/165154/1280x720/a4c06ff7b1/01_hero-image_20-trending-ecommerce-products-to-sell-in-2023.jpg/m/"
+      },
+      {
+          id: 3,
+          name : 'Item 4',
+          price : '410',
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3AxDPgH0E-VmV7uis3aaiJHd6KSYpaV5_gz3qpWBZNbglSE10rgM0N4pTY1oI7D2SdLI&usqp=CAUs"
+      },
+      {
+          id: 4,
+          name : 'Item 5',
+          price : '250',
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaizI7KQGVYNDqCAVHI3koWL8vyN2gvX9FrlOHq1tU-jOGzwyckGvRTaJuOPEjLXYVNNw&usqp=CAU"
+      }
+  ]
+
+  const productData = [
+      {
+          id: 0,
+          name : 'Item 1',
+          price : '20',
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1zIZBCt7LYu6cyVZCGDMiIH8WHy7BZ1tuwOQUtQSIoQ&s"
+      },
+      {
+          id: 1,
+          name : 'Item 2',
+          price : '200',
+          image: "https://i.pinimg.com/736x/43/e5/22/43e5224dd7de64956a60d436cde5c33b.jpg"
+      },
+      {
+          id: 2,
+          name : 'Item 3',
+          price : '30',
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrgmoF0agrcAx-rWRZDA3A45_O27lwBgqTkRgjgsH2Ng&s"
+      },
+      {
+          id: 3,
+          name : 'Item 4',
+          price : '410',
+          image: "https://ecommercephotographyindia.com/info/wp-content/uploads/2021/05/ecommerce-product-photoshoot.jpg"
+      },
+      {
+          id: 4,
+          name : 'Item 5',
+          price : '250',
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHjLwHzkr5VaMJV9mjV4XTJeBIS6MLZW-u-hCblmemHQ&s"
+      }
+  ]
+  
+
+  const image = document.querySelector('#image')
+  const nextBtn = document.querySelector('#next-btn')
+  const prevBtn = document.querySelector('#prev-btn')
+  const products = document.querySelector('#products')
+  let counter = -1;
+
+  // setInterval(() => {
+  //     if (counter < data.length - 1) {
+  //         counter++;
+  //         image.src = data[counter].image
+  //     }
+  //     else {
+  //         counter = 0;
+  //     }
+
+  // }, 1000)
+
+  nextBtn.addEventListener('click', () => {
+      if (counter < data.length - 1) {
+          counter++
+      }
+      else {
+          counter = 0
+      }
+      image.src = data[counter].image
+  })
+  prevBtn.addEventListener('click', () => {
+      if (counter === 0) {
+          counter = data.length - 1
+      }
+      else {
+          counter--
+      }
+      console.log(counter);
+      image.src = data[counter].image
+  })
+
+  for (i of productData) {
+      
+          products.innerHTML+=`<div class='rounded-xl overflow-hidden shadow-2xl  group w-full'>
+              <div class="h-[200px] w-full  overflow-hidden">
+                  <img class="object-cover h-full w-full group-hover:scale-125 transition duration-500 ease-in-out" src="${i.image}" alt=""/>
+              </div>
+              <div class='p-2 flex justify-between font-bold'>
+                  <p>${i.name}</p>
+                  <p class='font-bold'>$${i.price}</p>
+              </div>
+          </div>`
+          
+     
+  }
+</script>
+    
   </body>
 </html>
+
+
+
+
+
+
